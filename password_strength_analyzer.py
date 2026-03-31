@@ -6,7 +6,7 @@ import sys
 
 def is_common_password(password):
     
-    with open("D:\\coding\\Python programming\\Cy_common_password.txt","r") as f1:
+    with open("D:\\coding\\Python programming\\common_password.txt","r") as f1:
         common_password=f1.read().splitlines()
     return password.lower() in common_password  
 
