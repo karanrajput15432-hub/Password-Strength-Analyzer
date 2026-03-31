@@ -6,7 +6,7 @@ import sys
 
 def is_common_password(password):
     
-    with open("D:\\coding\\Python programming\\common_password.txt","r") as f1:
+    with open("common_password.txt","r") as f1:
         common_password=f1.read().splitlines()
     return password.lower() in common_password  
 
@@ -68,7 +68,7 @@ def score_counting(password):
 score,recommendation_count,recommendations_list = score_counting(password)
 
 
-with open("D:\\coding\\Python programming\\Cy_recommendation.txt","w") as f2:
+with open("recommendation.txt","w") as f2:
     f2.write("\n".join(recommendations_list))
 
 
